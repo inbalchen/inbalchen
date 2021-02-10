@@ -98,6 +98,15 @@ body {
   }
 }
 
+@media screen and (max-width: 576px) {
+  .first-section-wrapper {
+    background-attachment: inherit;
+    height: 30vh;
+  }
+}
+
+
+
 #link2,
 #link1 {
   text-decoration: none;
