@@ -1,0 +1,147 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.navbar-light .navbar-brand {
+  color: #3d405b !important;
+}
+
+.navbar-brand {
+  font-size: 1rem !important;
+}
+
+.menu-icon {
+  font-size: 1.2rem;
+}
+
+.main-wrapper {
+  padding-bottom: 50px;
+}
+
+.first-section-wrapper {
+  background-image: url("../images/bg-image.jpg");
+  background-repeat: no-repeat;
+  background-position: center left;
+  background-attachment: fixed;
+  background-size: cover;
+  width: 100%;
+  height: 80vh;
+}
+
+.card {
+  max-width: 600px;
+  margin: auto;
+  text-align: center;
+  box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 20%),
+    0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%);
+}
+
+.decorated-title {
+  overflow: hidden;
+  text-align: center;
+  font-size: 1.3rem;
+}
+.decorated-title > span {
+  position: relative;
+  display: inline-block;
+}
+.decorated-title > span:before,
+.decorated-title > span:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  width: 100vw;
+  margin: 0 20px;
+}
+.decorated-title > span:before {
+  right: 100%;
+}
+.decorated-title > span:after {
+  left: 100%;
+}
+
+.skills-wrapper i {
+  font-size: 5rem;
+}
+
+.proj-card {
+  min-height: 446px;
+  max-height: 446px;
+  margin-bottom: 20px;
+}
+
+.proj-card .card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.modal-dialog img {
+  width: 100%;
+}
+
+.card-git-rep {
+  padding: 15px 0;
+  max-width: 200px;
+}
+
+.work-ex-wrapper ul {
+  list-style: circle;
+}
+
+@media screen and (min-width: 576px) {
+  .modal-dialog {
+    max-width: 700px !important;
+  }
+}
+
+#link2,
+#link1 {
+  text-decoration: none;
+  display: block;
+  border-radius: 4px;
+  padding: 4px;
+}
+
+#link2:hover,
+#link1:hover {
+  background: rgba(249, 249, 249, 0.8);
+}
+
+footer {
+  height: 26vh;
+  padding: 10px;
+  background-color: #4a4e69;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #edf2f4;
+}
+
+footer a {
+  color: #edf2f4;
+  text-decoration: none;
+}
+footer a:hover {
+  color: inherit;
+  text-decoration: none;
+}
+
+footer i {
+  padding-right: 10px;
+  font-size: 1.3rem;
+}
+
+.card-action {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-action a {
+  margin: 0 3px;
+  padding: .360rem .40rem;
+}
