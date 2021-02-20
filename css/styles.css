@@ -4,6 +4,10 @@ body {
   height: 100%;
 }
 
+a {
+  cursor: pointer;
+}
+
 .navbar-light .navbar-brand {
   color: #3d405b !important;
 }
@@ -77,6 +81,10 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+.proj-card img:hover {
+  opacity: 0.8;
 }
 
 .modal-dialog img {
