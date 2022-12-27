@@ -21,16 +21,21 @@
         integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel='shortcut icon' type='image/png' href='https://inbalchen.github.io/Front-End-Development-Portfolio/images/favicon.png' />
-    <title>Code With Inbal</title>
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <title>Inbal Chen</title>
 </head>
 
 <body>
-    <div class="main-wrapper">
+    <div class="main__wrapper">
         <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-light">
+            <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="index.html"><i class="fas fa-code"></i> Inbal
-                        Chen</a>
+                    <a class="navbar-brand" href="index.html">
+                        IC
+                    </a>
                     <button class="navbar-toggler" type="" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
@@ -43,10 +48,10 @@
                         <form class="d-flex">
                             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                                 <li class="nav-item">
-                                    <a class="nav-link" aria-current="page" href="#" id="some_id">About Me</a>
+                                    <a class="nav-link" aria-current="page" href="#" id="about-me-link">About Me</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" aria-current="page" href="./resume.html" id="some_id">Resume</a>
+                                    <a class="nav-link" aria-current="page" href="./resume.html" id="resume_link">Resume</a>
                                 </li>
                             </ul>
                         </form>
@@ -54,77 +59,103 @@
                 </div>
             </nav>
         </div>
-        <div class="first-section-wrapper">
+        <div class="home__container">
+            <div class="row align-items-center justify-content-between gy-5">
+                <div class="col col-sm-12 col-lg-8">
+                    <h1 class="animate__animated animate__pulse text__dec">
+                        Hi,  <br /> I'm Inbal,<br /> Frontend Developer.
+                    </h1>
+                </div>
+                <div class="col col-sm-12 col-lg-4">
+                    <a href="mailto:inbalchenz@gmail.com" class="button-52" role="button">Contact Me</a>
+                </div>
+            </div>
         </div>
-        <div class="container">
-            <div>
-                <div class="card mt-5">
-                    <div class="card-body" id="about-me-text">
-                        <div>Hi, my name in Inbal Chen.</div>
-                        <div>I'm a junior Front-End developer with strong passion to code, learning new technologies and
-                            drive to constantly improve my skills.</div>
-                        <div>B.Sc. Software Engineer</div>
+
+
+        <section class="container mt-5 mb-2">
+            <div class="decorated__title">
+                <span>ABOUT ME</span>
+            </div>
+            <div class="mt-5 about_me__sec">
+                Hello! My name is Inbal<br /> and as a
+                <strong> Frontend Developer</strong> i enjoy to code new user-facing features, <br />
+                building reusable code, optimizing performance, and using a <br />
+                variety of markup languages to create web pages.<br />
+                My interest in web development started back in 2018 right after
+                completing my <strong>B.Sc. in software engineering</strong>.
+            </div>
+        </section>
+
+
+        <section class="container mt-5 mb-2">
+            <div class="decorated__title">
+                <span>SKILLS & TOOLS</span>
+            </div>
+            <div class="skills__wrapper mt-5">
+                <div class="row">
+                    <div class="col">
+                        <i class="fab fa-js-square" style="color: #f7df1e;"></i>
+                    </div>
+                    <div class="col">
+                        <i class="fab fa-node-js" style="color: #83CD29;"></i>
+                    </div>
+                    <div class="col">
+                        <i class="fab fa-css3-alt" style="color: #0070BA;"></i>
+                    </div>
+                    <div class="col">
+                        <i class="fab fa-react" style="color: #00D8FF;"></i>
+                    </div>
+                    <div class="col">
+                        <i class="fab fa-git-square" style="color: #F05033;"></i>
+                    </div>
+                    <div class="col">
+                        <i class="fab fa-html5" style="color: #FD7E13;"></i>
+                    </div>
+                    <div class="col">
+                        <img src="./images/react-redux.jpeg" alt="redux" style="max-width: 85px;" />
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
+        
         <div class="container mt-5 mb-2">
-            <div class="decorated-title">
-                <span>Skills</span>
-            </div>
-        </div>
-        <div class="container skills-wrapper mt-5" style="text-align: center;">
-            <div class="row">
-                <div class="col">
-                    <i class="fab fa-js-square" style="color: #f7df1e;"></i>
-                </div>
-                <div class="col">
-                    <i class="fab fa-node-js" style="color: #83CD29;"></i>
-                </div>
-                <div class="col">
-                    <i class="fab fa-css3-alt" style="color: #0070BA;"></i>
-                </div>
-                <div class="col">
-                    <i class="fab fa-react" style="color: #00D8FF;"></i>
-                </div>
-                <div class="col">
-                    <i class="fab fa-git-square" style="color: #F05033;"></i>
-                </div>
-                <div class="col">
-                    <i class="fab fa-html5" style="color: #FD7E13;"></i>
-                </div>
-                <div class="col">
-                    <img src="./images/react-redux.jpeg" alt="redux" style="max-width: 85px;" />
-                </div>
-            </div>
-        </div>
-        <div class="container mt-5 mb-2">
-            <div class="decorated-title">
+            <div class="decorated__title">
                 <span>Work Experience</span>
             </div>
+            <div class="ex__sec mt-5">
+                <div><strong> Frontend Developer</strong>, Stealth-mode startup in Tel-Aviv</div>
+                <p>2019 - 2022</p>
+                <ul>
+                    <li>
+                        Build modern and responsive web applications with focus on user experience, using the
+                        latest cutting-edge web technologies.
+                    </li>
+                    <li>
+                        Create and maintain efficient and reusable components.
+                    </li>
+                    <li>
+                        Design, develop and deploy new features.
+                    </li>
+                    <li>
+                        Research and experiment with new technologies and architectures.
+                    </li>
+                    <li>
+                        Collaborate together with product managers, designers and Back End developers.
+                    </li>
+                </ul>
+            </div>
         </div>
-        <div class="container work-ex-wrapper mt-5">
-            <div>I'm working as a front-end developer at Stealth-mode startup, in Tel-Aviv, for almost 2 years.</div>
-            <div>Responsibilities:</div>
-            <ul>
-                <li>Build modern and responsive web applications with focus on user experience, using the
-                    latest cutting-edge web technologies.</li>
-                <li>Create and maintain efficient and reusable components.</li>
-                <li>Design, develop and deploy new features.</li>
-                <li>Research and experiment with new technologies and architectures.</li>
-                <li>Collaborate together with product managers, designers and Back End developers.</li>
-            </ul>
-            
-        </div>
+        
         <div class="container mt-5 mb-2">
-            <div class="decorated-title">
+            <div class="decorated__title">
                 <span>Projects</span>
             </div>
         </div>
         <div class="container mt-5">
             <div class="row">
                 <div class="col">
-                    <div class="card proj-card" style="width: 18rem;">
+                    <div class="card card__container">
                         <a id="weather" data-bs-toggle="modal" data-bs-target="#exampleModal"
                             data-bs-title="Weather Panel" data-bs-img="./images/weather-panel.png">
                             <img src="./images/weather-panel.png" class="card-img-top" alt="weather-panel">
@@ -139,16 +170,16 @@
                             </p>
                             <div class="card-action">
                                 <a id="weather-link1" href="https://weather-panel.herokuapp.com/" target="_blank"
-                                    class="btn btn-primary">Visit Website</a>
+                                    class="button-51">Visit Website</a>
                                 <a id="weather-link2" href="https://github.com/inbalchen/weather-panel" target="_blank"
-                                    class="btn btn-primary">Source Code</a>
+                                    class="button-51">Source Code</a>
                             </div>
 
                         </div>
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card proj-card" style="width: 18rem;">
+                    <div class="card card__container" style="width: 18rem;">
                         <a id="blog" data-bs-toggle="modal" data-bs-target="#exampleModal"
                             data-bs-title="Blog" data-bs-img="./images/blog.png">
                             <img src="./images/blog.png" class="card-img-top" alt="blog">
@@ -159,15 +190,15 @@
                                 Using Node.js, Express, mongoDB, ejs, JavaScript, HTMl, restfull API and semantic-ui.
                             </p>
                             <div class="card-action">
-                                <a id="blog-link1" href="" class="btn btn-primary">Visit Website</a>
+                                <a id="blog-link1" href="" class="button-51">Visit Website</a>
                                 <a id="blog-link2" href="https://github.com/inbalchen/Blog" target="_blank"
-                                    class="btn btn-primary">Source Code</a>
+                                    class="button-51">Source Code</a>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card proj-card" style="width: 18rem;">
+                    <div class="card card__container" style="width: 18rem;">
                         <a id="youtube" data-bs-toggle="modal" data-bs-target="#exampleModal"
                             data-bs-title="YouTube" data-bs-img="./images/youtube.png">
                             <img src="./images/youtube.png" class="card-img-top" alt="youtube">
@@ -179,15 +210,15 @@
                                     API</a>, React and semantic-ui.</p>
                             <div class="card-action">
                                 <a id="youtube-link1" target="_blank" href="https://you-tube-search-app.herokuapp.com/"
-                                    class="btn btn-primary">Visit Website</a>
+                                    class="button-51">Visit Website</a>
                                 <a id="youtube-link2" href="https://github.com/inbalchen/YoutubeApp" target="_blank"
-                                    class="btn btn-primary">Source Code</a>
+                                    class="button-51">Source Code</a>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card proj-card" style="width: 18rem;">
+                    <div class="card card__container" style="width: 18rem;">
                         <a id="movie" data-bs-toggle="modal" data-bs-target="#exampleModal"
                             data-bs-title="Movie Search" data-bs-img="./images/movie.png">
 
@@ -201,9 +232,9 @@
                             </p>
                             <div class="card-action">
                                 <a id="movie-link1" target="_blank" href="https://moviesearchimdb.herokuapp.com/"
-                                    class="btn btn-primary">Visit Website</a>
+                                    class="button-51">Visit Website</a>
                                 <a id="movie-link2" href="https://github.com/inbalchen/MoviesAPIsearch" target="_blank"
-                                    class="btn btn-primary">Source Code</a>
+                                    class="button-51">Source Code</a>
                             </div>
                         </div>
                     </div>
@@ -212,21 +243,53 @@
         </div>
         <div class="container mt-5" style="text-align: center;">
             <div>
-                <a href="https://github.com/inbalchen" target="_blank" class="btn btn-primary"><i class="fab fa-github-square"></i> Visit
+                <a href="https://github.com/inbalchen" target="_blank" class="button-51">
+                    <i class="fab fa-github-square"></i> 
+                    Visit
                     all github projects </a>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel"></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <img alt="" />
+                    </div>
+                    <p class="modal-text"></p>
+                </div>
+                <div class="modal-footer">
+                    <a id="link2" target="_blank">Source Code</a>
+                    <a id="link1" target="_blank">Visit Website</a>
+                </div>
             </div>
         </div>
     </div>
 
     <footer>
         <div class="container">
-            
             <div class="row mt-2">
                 <div class="col">
-                    <a href="mailto:inbalchenz@gmail.com"><i class="fas fa-comment"></i>Contact Me</a>
-                </div>
-                <div class="col">
-                    <a href="https://www.linkedin.com/in/inbal-chen-318244135/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.linkedin.com/in/inbal-chen-318244135/" target="_blank">
+                        <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://github.com/inbalchen" target="_blank">
+                        <i class="fab fa-github-square"></i> 
+                    </a>
+                    <a href="mailto:inbalchenz@gmail.com">
+                        <i class="fa fa-envelope-square" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://wa.me/9720544715198">
+                        <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                    </a>
                 </div>
             </div>
             <div class="row mt-2">
@@ -241,29 +304,6 @@
             </div>
         </div>
     </footer>
-
-
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel"></h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <div class="mb-3">
-                        <img alt="" />
-                    </div>
-                    <p class="modal-text"></p>
-                    
-                </div>
-                <div class="modal-footer">
-                    <a id="link2" target="_blank">Source Code</a>
-                    <a id="link1" target="_blank">Visit Website</a>
-                </div>
-            </div>
-        </div>
-    </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"
         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>

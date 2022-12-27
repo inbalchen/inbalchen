@@ -2,9 +2,6 @@ var exampleModal = document.getElementById('exampleModal')
 exampleModal.addEventListener('show.bs.modal', function (event) {
   var button = event.relatedTarget
 
-  console.log(button.id)
-  
-
   var recipient = button.getAttribute('data-bs-title');
   var image = button.getAttribute('data-bs-img');
   var modalTitle = exampleModal.querySelector('.modal-title');
