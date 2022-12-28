@@ -12,7 +12,6 @@
   --red: #F05033;
   --orange: #FD7E13;
   --black: #000000;
-
 }
 
 * {
@@ -28,7 +27,7 @@
   margin-top: 56px;
   color: var(--white);
   height: 100%;
-  padding: 5rem;
+  padding: 10px 0 50px 0;
   width: 100%;
   background: radial-gradient(at top left, rgb(0, 0, 0) 20%, #000000 160%);
 }
@@ -254,15 +253,23 @@ footer i {
   }
 }
 
+/* @media (max-width: 768px) {
+  .home__container {
+    padding: 1rem;
+  }
+} */
+
 @media screen and (min-width: 576px) {
   .modal-dialog {
     max-width: 700px !important;
   }
-  
 }
 
 @media screen and (max-width: 470px) {
   .text__dec {
     font-size: var(--fs-m) !important;
+  }
+  .button-52, .button-51 {
+    font-size: 0.6rem;
   }
 }
