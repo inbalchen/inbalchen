@@ -37,6 +37,10 @@
   text-shadow: 0 0 0.1em hsl(228 8% 40% / 5), 0 0 0.125em currentColor;
 }
 
+.text__align {
+  text-align: right;
+}
+
 .card {
   max-width: 600px;
   margin: auto;
@@ -253,11 +257,14 @@ footer i {
   }
 }
 
-/* @media (max-width: 768px) {
+@media (max-width: 768px) {
   .home__container {
-    padding: 1rem;
+    text-align: center;
   }
-} */
+  .text__align {
+    text-align: center;
+  }
+}
 
 @media screen and (min-width: 576px) {
   .modal-dialog {
