@@ -1,5 +1,5 @@
 $(document).ready(function () {
-let imageHeight = $('.home__container').height() + 60;
+let imageHeight = $('.home__container').height();
   $("#about-me-link").click(function () {
     $("body,html").animate(
       {
