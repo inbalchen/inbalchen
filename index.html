@@ -21,10 +21,8 @@
         integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel='shortcut icon' type='image/png' href='https://inbalchen.github.io/Front-End-Development-Portfolio/images/favicon.png' />
-    <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <title>Inbal Chen</title>
 </head>
 
@@ -48,10 +46,10 @@
                         <form class="d-flex">
                             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                                 <li class="nav-item">
-                                    <a class="nav-link" aria-current="page" href="#" id="about-me-link">About Me</a>
+                                    <a class="nav-link" aria-current="page" href="#" id="about-me-link">ABOUT ME</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" aria-current="page" href="./resume.html" id="resume_link">Resume</a>
+                                    <a class="nav-link" aria-current="page" href="./resume.html" id="resume_link">RESUME</a>
                                 </li>
                             </ul>
                         </form>
@@ -60,24 +58,20 @@
             </nav>
         </div>
         <div class="home__container">
-            <div class="container">
-                <div class="row align-items-center justify-content-between gy-4">
                     <div class="col col-12 col-sm-12 col-md-7 col-lg-8">
-                        <h1 class="animate__animated animate__pulse text__dec">
-                            Hi,  <br /> I'm Inbal,<br /> Frontend Developer.
+                        <h1 class="text__dec" data-aos="fade-right" data-aos-duration="1500">
+                            Hi,  <br /> I'm Inbal,<br /> a frontend developer.
                         </h1>
                     </div>
                     <div class="col col-12 col-sm-12 col-md-5 col-lg-4 text__align">
-                        <a href="mailto:inbalchenz@gmail.com" class="button-52" role="button">Contact Me</a>
+                        <a href="mailto:inbalchenz@gmail.com" class="button-52" role="button" data-aos="zoom-in">Contact Me</a>
                     </div>
-                </div>
-            </div>
             
         </div>
 
 
         <section class="container mt-5 mb-2">
-            <div class="decorated__title">
+            <div class="decorated__title" data-aos="flip-left">
                 <span>ABOUT ME</span>
             </div>
             <div class="mt-5 about_me__sec">
@@ -92,38 +86,77 @@
 
 
         <section class="container mt-5 mb-2">
-            <div class="decorated__title">
-                <span>SKILLS & TOOLS</span>
+            <div class="decorated__title" data-aos="flip-left">
+                <span>SKILLS</span>
             </div>
-            <div class="skills__wrapper mt-5">
-                <div class="row">
-                    <div class="col">
-                        <i class="fab fa-js-square" style="color: #f7df1e;"></i>
+            <div class="skills__container mt-5">
+                <div>
+                    <div>
+                        <strong>LANGUAGES</strong> 
                     </div>
-                    <div class="col">
-                        <i class="fab fa-node-js" style="color: #83CD29;"></i>
+                    <div>
+                        JavaScript
                     </div>
-                    <div class="col">
-                        <i class="fab fa-css3-alt" style="color: #0070BA;"></i>
+                    <div>
+                        HTML
                     </div>
-                    <div class="col">
-                        <i class="fab fa-react" style="color: #00D8FF;"></i>
+                    <div>
+                        CSS/SASS
                     </div>
-                    <div class="col">
-                        <i class="fab fa-git-square" style="color: #F05033;"></i>
-                    </div>
-                    <div class="col">
-                        <i class="fab fa-html5" style="color: #FD7E13;"></i>
-                    </div>
-                    <div class="col">
-                        <img src="./images/react-redux.jpeg" alt="redux" style="max-width: 85px;" />
+                    <div>
+                        TypeScript
                     </div>
                 </div>
+
+                <div>
+                    <div>
+                        <strong>FRAMEWORKS</strong> 
+                    </div>
+                    <div>
+                        React
+                    </div>
+                    <div>
+                        Redux
+                    </div>
+                    <div>
+                        Node
+                    </div>
+                    <div>
+                        Gatsby
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <strong>TOOLS</strong> 
+                    </div>
+                    <div>
+                        Git & Github
+                    </div>
+                    <div>
+                        Jira
+                    </div>
+                    <div>
+                        MongoDB
+                    </div>
+                    <div>
+                        npm
+                    </div>
+                    <div>
+                        Postman
+                    </div>
+                    <div>
+                        Jenkins
+                    </div>
+                    <div>
+                        nginx
+                    </div>
+                </div>
+                
             </div>
         </section>
         
         <div class="container mt-5 mb-2">
-            <div class="decorated__title">
+            <div class="decorated__title" data-aos="flip-left">
                 <span>Work Experience</span>
             </div>
             <div class="ex__sec mt-5">
@@ -151,7 +184,7 @@
         </div>
         
         <div class="container mt-5 mb-2">
-            <div class="decorated__title">
+            <div class="decorated__title" data-aos="flip-left">
                 <span>Projects</span>
             </div>
         </div>
@@ -297,6 +330,10 @@
             </div>
         </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"
         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>

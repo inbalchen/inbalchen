@@ -27,8 +27,11 @@
   margin-top: 56px;
   color: var(--white);
   height: 100%;
-  padding: 10px 0 50px 0;
+  display: flex;
+  align-items: center;
+  padding: 5rem;
   width: 100%;
+  flex-wrap: wrap;
   background: radial-gradient(at top left, rgb(0, 0, 0) 20%, #000000 160%);
 }
 
@@ -74,8 +77,16 @@
   left: 100%;
 }
 
-.skills__wrapper i {
-  font-size: var(--fs-l);
+.skills__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.skills__container > div {
+  padding: 10px;
+  width: 18rem;
 }
 
 .card__container {
