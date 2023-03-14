@@ -46,10 +46,16 @@
                         <form class="d-flex">
                             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                                 <li class="nav-item">
-                                    <a class="nav-link" aria-current="page" href="#" id="about-me-link">ABOUT ME</a>
+                                    <a class="nav-link about-me" href="#about-me" id="about-me-link">ABOUT ME</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" aria-current="page" href="./resume.html" id="resume_link">RESUME</a>
+                                    <a class="nav-link skills" href="#skills" id="skills-link">SKILLS</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link work-experience" href="#work-experience" id="experience-link">EXPERIENCE</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link projects" href="#projects" id="projects-link">PROJECTS</a>
                                 </li>
                             </ul>
                         </form>
@@ -58,23 +64,22 @@
             </nav>
         </div>
         <div class="home__container">
-                    <div class="col col-12 col-sm-12 col-md-7 col-lg-8">
-                        <h1 class="text__dec" data-aos="fade-right" data-aos-duration="1500">
-                            Hi,  <br /> I'm Inbal,<br /> a frontend developer.
-                        </h1>
-                    </div>
-                    <div class="col col-12 col-sm-12 col-md-5 col-lg-4 text__align">
-                        <a href="mailto:inbalchenz@gmail.com" class="button-52" role="button" data-aos="zoom-in">Contact Me</a>
-                    </div>
-            
+            <div class="col col-12 col-sm-12 col-md-7 col-lg-8">
+                <h1 class="text__dec" data-aos="fade-right" data-aos-duration="1500">
+                    Hi,  <br /> I'm Inbal,<br /> a frontend developer.
+                </h1>
+            </div>
+            <div class="col col-12 col-sm-12 col-md-5 col-lg-4 text__align">
+                <a href="mailto:inbalchenz@gmail.com" class="button-52" role="button" data-aos="zoom-in">Contact Me</a>
+            </div>
         </div>
 
 
-        <section class="container mt-5 mb-2">
+        <section class="container mt-5 mb-2 about_me__sec" id="about-me">
             <div class="decorated__title" data-aos="flip-left">
                 <span>ABOUT ME</span>
             </div>
-            <div class="mt-5 about_me__sec">
+            <div class="mt-5">
                 Hello! My name is Inbal<br /> and as a
                 <strong> Frontend Developer</strong> i enjoy to code new user-facing features, <br />
                 building reusable code, optimizing performance, and using a <br />
@@ -85,7 +90,7 @@
         </section>
 
 
-        <section class="container mt-5 mb-2">
+        <section class="container mt-5 mb-2 skills__sec" id="skills">
             <div class="decorated__title" data-aos="flip-left">
                 <span>SKILLS</span>
             </div>
@@ -155,7 +160,7 @@
             </div>
         </section>
         
-        <div class="container mt-5 mb-2">
+        <section class="container mt-5 mb-2 work_ex__sec" id="work-experience">
             <div class="decorated__title" data-aos="flip-left">
                 <span>Work Experience</span>
             </div>
@@ -181,102 +186,102 @@
                     </li>
                 </ul>
             </div>
-        </div>
+        </section>
         
-        <div class="container mt-5 mb-2">
+        <section class="container mt-5 mb-2" id="projects">
             <div class="decorated__title" data-aos="flip-left">
                 <span>Projects</span>
             </div>
-        </div>
-        <div class="container mt-5">
-            <div class="row">
-                <div class="col">
-                    <div class="card card__container">
-                        <a id="weather" data-bs-toggle="modal" data-bs-target="#exampleModal"
-                            data-bs-title="Weather Panel" data-bs-img="./images/weather-panel.png">
-                            <img src="./images/weather-panel.png" class="card-img-top" alt="weather-panel">
-                        </a>
-                        <div class="card-body">
-                            <h5 class="card-title">Weather Panel</h5>
-                            <p class="card-text weather-text">
-                                Control Panel that shows the weather of some city. The
-                                user is able to search for a city and save it to favorites.
-                                Using <a href="https://developer.accuweather.com/">AccuWeather API</a>, React, Hooks,
-                                Redux, Material-ui.
-                            </p>
-                            <div class="card-action">
-                                <a id="weather-link1" href="https://weather-panel.herokuapp.com/" target="_blank"
-                                    class="button-51">Visit Website</a>
-                                <a id="weather-link2" href="https://github.com/inbalchen/weather-panel" target="_blank"
-                                    class="button-51">Source Code</a>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card card__container" style="width: 18rem;">
-                        <a id="blog" data-bs-toggle="modal" data-bs-target="#exampleModal"
-                            data-bs-title="Blog" data-bs-img="./images/blog.png">
-                            <img src="./images/blog.png" class="card-img-top" alt="blog">
-                        </a>
-                        <div class="card-body">
-                            <h5 class="card-title">Blog</h5>
-                            <p class="card-text blog-text">Blog website that allow users to add, edit and delete posts.
-                                Using Node.js, Express, mongoDB, ejs, JavaScript, HTMl, restfull API and semantic-ui.
-                            </p>
-                            <div class="card-action">
-                                <a id="blog-link1" href="" class="button-51">Visit Website</a>
-                                <a id="blog-link2" href="https://github.com/inbalchen/Blog" target="_blank"
-                                    class="button-51">Source Code</a>
+            <div class="container mt-5">
+                <div class="row">
+                    <div class="col">
+                        <div class="card card__container">
+                            <a id="weather" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                                data-bs-title="Weather Panel" data-bs-img="./images/weather-panel.png">
+                                <img src="./images/weather-panel.png" class="card-img-top" alt="weather-panel">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">Weather Panel</h5>
+                                <p class="card-text weather-text">
+                                    Control Panel that shows the weather of some city. The
+                                    user is able to search for a city and save it to favorites.
+                                    Using <a href="https://developer.accuweather.com/">AccuWeather API</a>, React, Hooks,
+                                    Redux, Material-ui.
+                                </p>
+                                <div class="card-action">
+                                    <a id="weather-link1" href="https://weather-panel.herokuapp.com/" target="_blank"
+                                        class="button-51">Visit Website</a>
+                                    <a id="weather-link2" href="https://github.com/inbalchen/weather-panel" target="_blank"
+                                        class="button-51">Source Code</a>
+                                </div>
+    
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col">
-                    <div class="card card__container" style="width: 18rem;">
-                        <a id="youtube" data-bs-toggle="modal" data-bs-target="#exampleModal"
-                            data-bs-title="YouTube" data-bs-img="./images/youtube.png">
-                            <img src="./images/youtube.png" class="card-img-top" alt="youtube">
-                        </a>
-                        <div class="card-body">
-                            <h5 class="card-title">YouTube app</h5>
-                            <p class="card-text youtube-text">YouTube application that allow users to search videos.
-                                Using <a href="https://developers.google.com/youtube/v3/getting-started">YouTube Data
-                                    API</a>, React and semantic-ui.</p>
-                            <div class="card-action">
-                                <a id="youtube-link1" target="_blank" href="https://you-tube-search-app.herokuapp.com/"
-                                    class="button-51">Visit Website</a>
-                                <a id="youtube-link2" href="https://github.com/inbalchen/YoutubeApp" target="_blank"
-                                    class="button-51">Source Code</a>
+                    <div class="col">
+                        <div class="card card__container" style="width: 18rem;">
+                            <a id="blog" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                                data-bs-title="Blog" data-bs-img="./images/blog.png">
+                                <img src="./images/blog.png" class="card-img-top" alt="blog">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">Blog</h5>
+                                <p class="card-text blog-text">Blog website that allow users to add, edit and delete posts.
+                                    Using Node.js, Express, mongoDB, ejs, JavaScript, HTMl, restfull API and semantic-ui.
+                                </p>
+                                <div class="card-action">
+                                    <a id="blog-link1" href="" class="button-51">Visit Website</a>
+                                    <a id="blog-link2" href="https://github.com/inbalchen/Blog" target="_blank"
+                                        class="button-51">Source Code</a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col">
-                    <div class="card card__container" style="width: 18rem;">
-                        <a id="movie" data-bs-toggle="modal" data-bs-target="#exampleModal"
-                            data-bs-title="Movie Search" data-bs-img="./images/movie.png">
-
-                            <img src="./images/movie.png" class="card-img-top" alt="movie-search">
-                        </a>
-                        <div class="card-body">
-                            <h5 class="card-title">Movie Search</h5>
-                            <p class="card-text movie-text">
-                                allow users to search favorite movies. Using <a href="http://www.omdbapi.com/">OMDB
-                                    API</a>, Node.js, Express and ejs.
-                            </p>
-                            <div class="card-action">
-                                <a id="movie-link1" target="_blank" href="https://moviesearchimdb.herokuapp.com/"
-                                    class="button-51">Visit Website</a>
-                                <a id="movie-link2" href="https://github.com/inbalchen/MoviesAPIsearch" target="_blank"
-                                    class="button-51">Source Code</a>
+                    <div class="col">
+                        <div class="card card__container" style="width: 18rem;">
+                            <a id="youtube" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                                data-bs-title="YouTube" data-bs-img="./images/youtube.png">
+                                <img src="./images/youtube.png" class="card-img-top" alt="youtube">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">YouTube app</h5>
+                                <p class="card-text youtube-text">YouTube application that allow users to search videos.
+                                    Using <a href="https://developers.google.com/youtube/v3/getting-started">YouTube Data
+                                        API</a>, React and semantic-ui.</p>
+                                <div class="card-action">
+                                    <a id="youtube-link1" target="_blank" href="https://you-tube-search-app.herokuapp.com/"
+                                        class="button-51">Visit Website</a>
+                                    <a id="youtube-link2" href="https://github.com/inbalchen/YoutubeApp" target="_blank"
+                                        class="button-51">Source Code</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card card__container" style="width: 18rem;">
+                            <a id="movie" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                                data-bs-title="Movie Search" data-bs-img="./images/movie.png">
+    
+                                <img src="./images/movie.png" class="card-img-top" alt="movie-search">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">Movie Search</h5>
+                                <p class="card-text movie-text">
+                                    allow users to search favorite movies. Using <a href="http://www.omdbapi.com/">OMDB
+                                        API</a>, Node.js, Express and ejs.
+                                </p>
+                                <div class="card-action">
+                                    <a id="movie-link1" target="_blank" href="https://moviesearchimdb.herokuapp.com/"
+                                        class="button-51">Visit Website</a>
+                                    <a id="movie-link2" href="https://github.com/inbalchen/MoviesAPIsearch" target="_blank"
+                                        class="button-51">Source Code</a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     </div>
 
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
