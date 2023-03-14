@@ -35,6 +35,10 @@
   background: radial-gradient(at top left, rgb(0, 0, 0) 20%, #000000 160%);
 }
 
+.home__container > div {
+  padding: 1rem 0;
+}
+
 .text__dec {
   font-size: var(--fs-l);
   text-shadow: 0 0 0.1em hsl(228 8% 40% / 5), 0 0 0.125em currentColor;
