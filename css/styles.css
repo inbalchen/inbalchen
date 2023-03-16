@@ -4,15 +4,10 @@
   --fs-m: 1.5rem;
   --fs-l: 5rem;
   --white: #ffffff;
-  --yellow: #ffe54c;
-  --yellow-1: #f7df1e;
-  --green: #83CD29;
-  --blue: #0070BA;
-  --light-blue: #00D8FF;
-  --red: #F05033;
-  --orange: #FD7E13;
-  --black: #000000;
-
+  --secondary-color: #ffe54c;
+  --base-color: #000000;
+  --primary-color: #7f00ff;
+  --medium: 768px;
 }
 
 @font-face {
@@ -48,14 +43,14 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-color: #7f00ff;
+  background-color: var(--primary-color);
   background-blend-mode: screen;
   background-attachment: fixed;
 }
 
 .intro__container .intro__container-left-pane h1 {
   font-size: var(--fs-l);
-  color: var(--black);
+  color: var(--base-color);
   margin: 0;
 }
 
@@ -75,6 +70,7 @@
 .decorated__title > span {
   position: relative;
   display: inline-block;
+  text-transform: uppercase;
 }
 .decorated__title > span:before,
 .decorated__title > span:after {
@@ -227,9 +223,9 @@ footer i {
   letter-spacing: 1px;
   padding: 13px 20px 13px;
   outline: 0 !important;
-  border: 1px solid var(--black);
+  border: 1px solid var(--base-color);
   cursor: pointer;
-  color: var(--black);
+  color: var(--base-color);
   position: relative;
   background-color: rgba(0, 0, 0, 0);
   user-select: none;
@@ -238,31 +234,13 @@ footer i {
   text-decoration: none;
 }
 
-.button-52 {
-  z-index: 0;
-  font-size: var(--fs-s);
-  font-weight: 200;
-  letter-spacing: 1px;
-  padding: 13px 20px 13px;
-  outline: 0 !important;
-  border: 1px solid #fff;
-  cursor: pointer;
-  color: var(--black);
-  position: relative;
-  background-color: rgba(0, 0, 0, 0);
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  text-decoration: none;
+.button-51:hover {
+  color: var(--base-color);
 }
 
-.button-52:hover, .button-51:hover {
-  color: var(--black);
-}
-
-.button-52:after, .button-51:after {
+.button-51:after {
   content: "";
-  background-color: var(--yellow);
+  background-color: var(--secondary-color);
   width: 100%;
   z-index: -1;
   position: absolute;
@@ -272,22 +250,19 @@ footer i {
   transition: 0.2s;
 }
 
-.button-52:hover:after, .button-51:hover:after  {
+.button-51:hover:after  {
   top: 0px;
   left: 0px;
 }
 
 @media (min-width: 768px) {
-  .button-52, .button-51 {
+  .button-51 {
     padding: 13px 50px 13px;
   }
 }
 
 @media (max-width: 768px) {
   .intro__container {
-    text-align: center;
-  }
-  .text__align {
     text-align: center;
   }
 }
