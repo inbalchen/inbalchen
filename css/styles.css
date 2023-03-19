@@ -39,6 +39,7 @@
 
 .main__wrapper {
   padding-bottom: 50px;
+  position: relative;
 }
 
 .intro__container {
@@ -55,6 +56,7 @@
   background-size: cover, cover;
   background-blend-mode: overlay;
   background-attachment: fixed, scroll;
+  transition: background-position 0.2s;
 }
 
 .intro__container .intro__container-left-pane h1 {
@@ -63,6 +65,33 @@
   margin: 0;
   font-family: Assistant-Bold;
 }
+
+/* SOCIAL */
+
+.social {
+  position: fixed;
+  z-index: 50;
+  padding: 5px;
+  top: 50%;
+  display: flex;
+  flex-direction: column;
+  left: 10px;
+  background: rgba(255,255,255,0.8);
+}
+
+.social i {
+  font-size: 1.8rem !important;
+}
+
+.social a {
+  color: var(--base-color);
+}
+
+.social a:hover {
+  color: var(--primary-color);
+}
+
+/* PROJECTS */
 
 .card {
   max-width: 600px;
@@ -120,6 +149,7 @@
   min-height: 446px;
   max-height: 446px;
   margin-bottom: 20px;
+  border: 1px solid var(--base-color) !important;
   width: 18rem;
   border-radius: 0 !important;
   box-shadow: none;
@@ -334,6 +364,10 @@ footer i {
   left: 0px;
 }
 
+.navbar-light .navbar-nav .nav-link {
+  color: var(--base-color) !important;
+}
+
 .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
   color: var(--primary-color) !important;
   font-family: Assistant-Bold;
@@ -374,12 +408,19 @@ footer i {
 @media (max-width: 768px) {
   .intro__container {
     text-align: center;
+    background-position: center, 11px -49px;
   }
 }
 
 @media screen and (min-width: 576px) {
   .modal-dialog {
     max-width: 700px !important;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .social {
+    display: none;
   }
 }
 
