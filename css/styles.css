@@ -40,6 +40,7 @@
 .main__wrapper {
   padding-bottom: 50px;
   position: relative;
+  overflow: hidden;
 }
 
 .intro__container {
