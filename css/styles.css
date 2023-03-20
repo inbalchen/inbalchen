@@ -94,53 +94,54 @@
 
 /* PROJECTS */
 
-.card {
-  max-width: 600px;
+.card-1 {
+  position: relative;
+  transition: all .5s ease-in;
+}
+
+.card__image {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 267px;
   margin: auto;
+  object-fit: contain;
+}
+
+.card__overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  visibility: none;
+  transition: .5s ease;
+  background-color: rgba(255,255,255,0.8);
+}
+
+.card-1:hover .card__overlay {
+  opacity: 1;
+}
+
+.overlay__text {
+  color: var(--base-color);
+  font-size: 20px;
+  position: absolute;
+  width: 80%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   text-align: center;
-  box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 20%),
-    0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%);
 }
 
-.card__container {
-  min-height: 446px;
-  max-height: 446px;
-  margin-bottom: 20px;
-  border: 1px solid var(--base-color) !important;
-  width: 18rem;
-  border-radius: 0 !important;
-  box-shadow: none;
-}
-
-.card__container a {
-  cursor: pointer;
-}
-
-.card__container .card-body {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.card__container .card-text a {
-  color: var(--primary-color);
-}
-
-.card__container img:hover {
-  opacity: 0.8;
-}
-
-.card-img-top {
-  border-radius: 0 !important;
-}
-
-.card-action a {
-  margin: 0 3px;
-  padding: .360rem .40rem;
-}
 
 .decorated__title {
-  font-size: var(--fs-m);
+  text-align: center;
 }
 
 .decorated__title > span {
@@ -228,6 +229,7 @@
   left: 0px;
   top: 3px;
   width: 20px;
+  opacity: 0.6;
 }
 
 .about_me__sec .about_me__sec-text-container {
@@ -396,6 +398,8 @@ input:focus, textarea:focus {
   color: var(--primary-color);
 }
 
+/* PATTERN */
+
 .pattern-1 {
   background: linear-gradient(25deg, #ffffff 40%, transparent 41%, transparent 59%, #ffffff 60%) ,linear-gradient(90deg, transparent 45%, var(--secondary-color) 45%, var(--secondary-color) 55%, transparent 55%, transparent 20%, var(--secondary-color) 20%, var(--secondary-color) 30%,transparent 82%);
   background-size: 4em 4em;
@@ -419,12 +423,6 @@ input:focus, textarea:focus {
   bottom: 0;
   right: 0;
   transform: rotate(-45deg);
-}
-
-@media (min-width: 768px) {
-  .button-51 {
-    padding: 13px 50px 13px;
-  }
 }
 
 @media (max-width: 768px) {
