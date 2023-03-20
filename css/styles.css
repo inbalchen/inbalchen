@@ -397,7 +397,7 @@ input:focus, textarea:focus {
 }
 
 .pattern-1 {
-  background: linear-gradient(25deg, #ffffff 40%, transparent 41%, transparent 59%, #ffffff 60%) ,linear-gradient(90deg, transparent 45%, var(--secondary-color) 45%, var(--secondary-color) 55%, transparent 55%, transparent 20%, var(--secondary-color) 20%, var(--secondary-color) 30%,transparent 30%);
+  background: linear-gradient(25deg, #ffffff 40%, transparent 41%, transparent 59%, #ffffff 60%) ,linear-gradient(90deg, transparent 45%, var(--secondary-color) 45%, var(--secondary-color) 55%, transparent 55%, transparent 20%, var(--secondary-color) 20%, var(--secondary-color) 30%,transparent 82%);
   background-size: 4em 4em;
   opacity: 0.45;
   height: 185px;
