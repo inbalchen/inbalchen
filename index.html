@@ -50,10 +50,10 @@
                                     <a class="nav-link about-me" href="#about-me" id="about-me-link">ABOUT ME</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link skills" href="#skills" id="skills-link">SKILLS</a>
+                                    <a class="nav-link work-experience" href="#work-experience" id="experience-link">EXPERIENCE</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link work-experience" href="#work-experience" id="experience-link">EXPERIENCE</a>
+                                    <a class="nav-link skills" href="#skills" id="skills-link">SKILLS</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link projects" href="#projects" id="projects-link">PROJECTS</a>
@@ -82,8 +82,8 @@
             </a>
         </div>
         <section class="intro__container">
-            <div class="intro__container-left-pane">
-                <h1 data-aos="fade-right" data-aos-duration="1500">
+            <div class="intro__container-left-pane" data-aos="fade-zoom-out" data-aos-duration="1000">
+                <h1>
                     Hi,  <br /> I'm Inbal,<br /> a frontend developer.
                 </h1>
             </div>
@@ -92,10 +92,11 @@
             </div>
         </section>
 
-        <section class="container mt-5 mb-2 about_me__sec" id="about-me">
-            <div class="decorated__title" data-aos="flip-left">
+        <section class="container mt-5 mb-2 about_me__sec" id="about-me" data-aos="fade-zoom-out">
+            <div class="decorated__title" data-aos="fade-zoom-in">
                 <span>ABOUT ME</span>
             </div>
+            <div class="pattern-2"></div>
             <div class="mt-5 about_me__sec-text-container">
                 <h3>Hello! My name is Inbal</h3>  As a
                 <strong> Frontend Developer</strong> i enjoy to code new user-facing features, <br />
@@ -106,11 +107,45 @@
                 I'm open to Job opportunities where I can contribute, learn and grow.
             </div>
         </section>
+        
+        <section class="container mt-5 mb-2 work_ex__sec" id="work-experience" data-aos="fade-zoom-out">
+            <div class="decorated__title" data-aos="fade-zoom-in">
+                <span>Work Experience</span>
+            </div>
+            <div class="pattern-1"></div>
+            <div class="ex__sec mt-5">
+                <h3><strong> Frontend Developer</strong>, Stealth-mode startup in Tel-Aviv</h3>
+                <p>2019 - 2022</p>
+                <div class="mb-4">As a frontend developer i was responsible for desktop and web applications:</div>
+                <ul>
+                    <li>
+                        Build modern and responsive web applications with focus on user experience, using the
+                        latest cutting-edge web technologies.
+                    </li>
+                    <li>
+                        Build the company's marketing sites for the products.
+                    </li>
+                    <li>
+                        Create and maintain efficient and reusable components.
+                    </li>
+                    <li>
+                        Design, develop and deploy new features.
+                    </li>
+                    <li>
+                        Research and experiment with new technologies and architectures.
+                    </li>
+                    <li>
+                        Collaborate together with product managers, designers and Back End developers.
+                    </li>
+                </ul>
+            </div>
+        </section>
 
-        <section class="container mt-5 mb-2 skills__sec" id="skills">
-            <div class="decorated__title" data-aos="flip-left">
+        <section class="container mt-5 mb-2 skills__sec" id="skills" data-aos="fade-zoom-out">
+            <div class="decorated__title" data-aos="fade-zoom-in">
                 <span>SKILLS</span>
             </div>
+            <div class="pattern-1"></div>
             <div class="skills__container mt-5">
                 <div>
                     <div>
@@ -177,46 +212,16 @@
             </div>
         </section>
         
-        <section class="container mt-5 mb-2 work_ex__sec" id="work-experience">
-            <div class="decorated__title" data-aos="flip-left">
-                <span>Work Experience</span>
-            </div>
-            <div class="ex__sec mt-5">
-                <h3><strong> Frontend Developer</strong>, Stealth-mode startup in Tel-Aviv</h3>
-                <p>2019 - 2022</p>
-                <div class="mb-4">As a frontend developer i was responsible for desktop and web applications:</div>
-                <ul>
-                    <li>
-                        Build modern and responsive web applications with focus on user experience, using the
-                        latest cutting-edge web technologies.
-                    </li>
-                    <li>
-                        Build the company's marketing sites for the products.
-                    </li>
-                    <li>
-                        Create and maintain efficient and reusable components.
-                    </li>
-                    <li>
-                        Design, develop and deploy new features.
-                    </li>
-                    <li>
-                        Research and experiment with new technologies and architectures.
-                    </li>
-                    <li>
-                        Collaborate together with product managers, designers and Back End developers.
-                    </li>
-                </ul>
-            </div>
-        </section>
-        
-        <section class="container mt-5 mb-2" id="projects">
-            <div class="decorated__title" data-aos="flip-left">
+        <section class="container mt-5 mb-2" id="projects" data-aos="fade-zoom-out">
+            <div class="decorated__title" data-aos="fade-zoom-in">
                 <span>Projects</span>
             </div>
+            <div class="pattern-1"></div>
+            <div class="pattern-2"></div>
             <div class="container mt-5">
                 <div class="row">
                     <div class="col">
-                        <div class="card card__container">
+                        <div class="card card__container" data-aos="fade-zoom-in" data-aos-duration="1000">
                             <a id="weather" data-bs-toggle="modal" data-bs-target="#exampleModal"
                                 data-bs-title="Weather Panel" data-bs-img="./assets/weather-panel.png">
                                 <img src="./assets/weather-panel.png" class="card-img-top" alt="weather-panel">
@@ -240,7 +245,7 @@
                         </div>
                     </div>
                     <div class="col">
-                        <div class="card card__container" style="width: 18rem;">
+                        <div class="card card__container" style="width: 18rem;" data-aos="fade-zoom-in" data-aos-duration="1000">
                             <a id="blog" data-bs-toggle="modal" data-bs-target="#exampleModal"
                                 data-bs-title="Blog" data-bs-img="./assets/blog.png">
                                 <img src="./assets/blog.png" class="card-img-top" alt="blog">
@@ -259,7 +264,7 @@
                         </div>
                     </div>
                     <div class="col">
-                        <div class="card card__container" style="width: 18rem;">
+                        <div class="card card__container" style="width: 18rem;" data-aos="fade-zoom-in" data-aos-duration="1000">
                             <a id="youtube" data-bs-toggle="modal" data-bs-target="#exampleModal"
                                 data-bs-title="YouTube" data-bs-img="./assets/youtube.png">
                                 <img src="./assets/youtube.png" class="card-img-top" alt="youtube">
@@ -279,7 +284,7 @@
                         </div>
                     </div>
                     <div class="col">
-                        <div class="card card__container" style="width: 18rem;">
+                        <div class="card card__container" style="width: 18rem;" data-aos="fade-zoom-in" data-aos-duration="1000">
                             <a id="movie" data-bs-toggle="modal" data-bs-target="#exampleModal"
                                 data-bs-title="Movie Search" data-bs-img="./assets/movie.png">
     
@@ -301,7 +306,7 @@
                         </div>
                     </div>
                     <div class="col">
-                        <div class="card card__container" style="width: 18rem;">
+                        <div class="card card__container" style="width: 18rem;" data-aos="fade-zoom-in" data-aos-duration="1000">
                             <a id="dropdown" data-bs-toggle="modal" data-bs-target="#exampleModal"
                                 data-bs-title="React Dropdown Component" data-bs-img="./assets/drop-down.png">
     
@@ -322,10 +327,9 @@
                         </div>
                     </div>
                     <div class="col">
-                        <div class="card card__container" style="width: 18rem;">
+                        <div class="card card__container" style="width: 18rem;" data-aos="fade-zoom-in" data-aos-duration="1000">
                             <a id="survey" data-bs-toggle="modal" data-bs-target="#exampleModal"
                                 data-bs-title="Survey App" data-bs-img="./assets/survey-app.png">
-    
                                 <img src="./assets/survey-app.png" class="card-img-top" alt="survey-app">
                             </a>
                             <div class="card-body">
@@ -346,10 +350,12 @@
             </div>
         </section>
         
-        <section class="container mt-5 mb-2 contact__sec" id="contact">
-            <div class="decorated__title" data-aos="flip-left">
+        <section class="container mt-5 mb-2 contact__sec" id="contact" data-aos="fade-zoom-out">
+            <div class="decorated__title" data-aos="fade-zoom-in">
                 <span>Contact</span>
             </div>
+            <div class="pattern-1"></div>
+            <div class="pattern-2"></div>
             <h2 class="mt-4">Send me a message!</h2>
             <p>Feel free to share whatever's on your mind..</p>
             <form action="https://api.web3forms.com/submit" method="POST" id="form" class="mt-5 form">
@@ -373,8 +379,8 @@
                     Send Message
                   </button>
                 </div>
-                <p class="" id="result"></p>
-              </form>
+                <p id="result"></p>
+            </form>
         </section>
     </div>
 
@@ -392,8 +398,8 @@
                     <p class="modal-text"></p>
                 </div>
                 <div class="modal-footer">
-                    <a id="link2" target="_blank">Source Code</a>
-                    <a id="link1" target="_blank">Visit Website</a>
+                    <a id="link2" target="_blank" class="button-51">Source Code</a>
+                    <a id="link1" target="_blank" class="button-51">Visit Website</a>
                 </div>
             </div>
         </div>
@@ -419,7 +425,7 @@
             </div>
             <div class="row mt-2">
                 <div class="col">
-                    Designed & developed by IC     
+                    Designed & Developed by IC     
                 </div>
             </div>
         </div>
