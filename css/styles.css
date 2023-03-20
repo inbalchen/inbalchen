@@ -416,7 +416,7 @@ input:focus, textarea:focus {
 .pattern-2 {
   background: radial-gradient(circle at 25% 25%,transparent 14%,var(--primary-color) 15%, var(--primary-color) 20%, transparent 21%, transparent 100%), radial-gradient(circle at 75% 75%, transparent 11%, var(--primary-color) 12%, var(--primary-color) 17%, transparent 18%);
   background-size: 2em 2em;
-  opacity: 0.45;
+  opacity: 0.25;
   width: 112px;
   height: 112px;
   position: absolute;
