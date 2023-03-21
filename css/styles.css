@@ -52,9 +52,9 @@
   align-items: center;
   flex-wrap: wrap;
   background: url(../assets/bg.png), url(../assets/blob.svg);
-  background-repeat: no-repeat, no-repeat;
+  background-repeat: no-repeat;
   background-position: center, -161px -172px;
-  background-size: cover, cover;
+  background-size: cover;
   background-blend-mode: overlay;
   background-attachment: fixed, scroll;
   transition: all 0.2s;
