@@ -56,7 +56,7 @@
   background: url(../assets/bg.png), url(../assets/blob.png);
   background-repeat: no-repeat;
   background-position: center, -185px -250px;
-  background-size: cover;
+  background-size: cover, auto;
   background-blend-mode: overlay;
   background-attachment: fixed, scroll;
   transition: all 0.2s;
@@ -560,7 +560,11 @@ input:focus, textarea:focus {
 @media (max-width: 768px) {
   .intro__container {
     text-align: center;
-    background-position: center, -108px -58px;
+  }
+}
+
+@supports (-webkit-overflow-scrolling: touch) {
+  .intro__container {
     background-attachment: initial;
   }
 }
