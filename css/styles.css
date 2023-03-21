@@ -20,6 +20,7 @@
   url("../assets/fonts/Assistant-Light/49720e4c68486cb89dcbea2f440c8fe1.woff") format("woff"), 
   url("../assets/fonts/Assistant-Light/49720e4c68486cb89dcbea2f440c8fe1.ttf") format("truetype"), 
   url("../assets/fonts/Assistant-Light/49720e4c68486cb89dcbea2f440c8fe1.svg#Assistant") format("svg");
+  font-display: swap;
 }
 
 @font-face {
@@ -30,6 +31,7 @@
   url("../assets/fonts/Assistant-Bold/b15efb1cccf12da9d9996c2064265a5b.woff") format("woff"), 
   url("../assets/fonts/Assistant-Bold/b15efb1cccf12da9d9996c2064265a5b.ttf") format("truetype"), 
   url("../assets/fonts/Assistant-Bold/b15efb1cccf12da9d9996c2064265a5b.svg#Assistant") format("svg"); 
+  font-display: swap;
 }
 
 * {
