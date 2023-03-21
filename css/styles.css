@@ -561,7 +561,6 @@ input:focus, textarea:focus {
   .intro__container {
     text-align: center;
     background-position: center, -108px -58px;
-    background-size: auto, 155%;
     background-attachment: initial;
   }
 }
