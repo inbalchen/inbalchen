@@ -31,7 +31,7 @@
         <div class="container">
             <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="index.html">
+                    <a class="navbar-brand" href="index.html" aria-label="Logo Icon">
                         <div class="navbar-brand-logo">
                             <img src="./assets/IC-logos.jpeg" alt="IC logo" />
                         </div>
@@ -47,19 +47,19 @@
                         <form>
                             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                                 <li class="nav-item">
-                                    <a class="nav-link about-me" href="#about-me" id="about-me-link">ABOUT ME</a>
+                                    <a class="nav-link about-me" href="#about-me" id="about-me-link" aria-label="About Me Link">ABOUT ME</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link work-experience" href="#work-experience" id="experience-link">EXPERIENCE</a>
+                                    <a class="nav-link work-experience" href="#work-experience" id="experience-link" aria-label="Work Experience Link">EXPERIENCE</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link skills" href="#skills" id="skills-link">SKILLS</a>
+                                    <a class="nav-link skills" href="#skills" id="skills-link" aria-label="Skills Link">SKILLS</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link projects" href="#projects" id="projects-link">PROJECTS</a>
+                                    <a class="nav-link projects" href="#projects" id="projects-link" aria-label="Projects Link">PROJECTS</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link contact" href="#contact" id="contact-link">CONTACT</a>
+                                    <a class="nav-link contact" href="#contact" id="contact-link" aria-label="Contact Link">CONTACT</a>
                                 </li>
                             </ul>
                         </form>
@@ -68,16 +68,16 @@
             </nav>
         </div>
         <div class="social">
-            <a href="https://www.linkedin.com/in/inbal-chen-318244135/" target="_blank">
+            <a href="https://www.linkedin.com/in/inbal-chen-318244135/" target="_blank" aria-label="Linkedin">
                 <i class="fa fa-linkedin-square" aria-hidden="true"></i>
             </a>
-            <a href="https://github.com/inbalchen" target="_blank">
+            <a href="https://github.com/inbalchen" target="_blank" aria-label="Github">
                 <i class="fab fa-github-square"></i> 
             </a>
             <a href="mailto:inbalchenz@gmail.com">
-                <i class="fa fa-envelope-square" aria-hidden="true"></i>
+                <i class="fa fa-envelope-square" aria-hidden="true" aria-label="Email"></i>
             </a>
-            <a href="https://wa.me/9720544715198">
+            <a href="https://wa.me/9720544715198" aria-label="Whatsapp">
                 <i class="fa fa-whatsapp" aria-hidden="true"></i>
             </a>
         </div>
@@ -88,7 +88,7 @@
                 </h1>
             </div>
             <div class="intro__container-right-pane">
-                <a href="mailto:inbalchenz@gmail.com" class="button-51" role="button">Contact Me</a>
+                <a href="mailto:inbalchenz@gmail.com" class="button-51" role="button" aria-label="Contact">Contact Me</a>
             </div>
         </section>
 
@@ -98,8 +98,8 @@
             </div>
             <div class="pattern-2"></div>
             <div class="mt-5 about_me__sec-text-container">
-                <h3>Hello! My name is Inbal</h3>  As a
-                <strong> Frontend Developer</strong> i enjoy to code new user-facing features, <br />
+                <div><strong>Hey! My name is Inbal</strong></div>  As a
+                Frontend Developer i enjoy to code new user-facing features, <br />
                 building reusable code, optimizing performance, and using a <br />
                 variety of markup languages to create web pages.<br />
                 My interest in web development started back in 2018 <br /> right after
@@ -222,33 +222,34 @@
                 <div class="row">
                     <div class="col-md-12 col-sm-12 col-lg-6 mt-4">
                         <div class="card-1">
-                            <img src="./assets/weather-app.png" class="card__image">
+                            <img src="./assets/weather-app.png" class="card__image" alt="weather app">
                             <div class="card__overlay">
                               <div class="overlay__text">
                                 <h3>Weather App</h3>
                                 <p>Weather application that shows the weather of some city. The
                                     user is able to search for a city and save it to favorites.
-                                    Using <a href="https://developer.accuweather.com/">AccuWeather API</a>, React, React Router, Hooks,
+                                    Using <a href="https://developer.accuweather.com/" aria-label="AccuWeather API">AccuWeather API</a>, React, React Router, Hooks,
                                     Redux and Material-ui.</p>
                                     <a href="https://weather-app-ic.netlify.app/" target="_blank"
-                                    class="button-51">Visit Website</a>
+                                    class="button-51" aria-label="Visit Website">Visit Website</a>
                                     <a id="weather-link2" href="https://github.com/inbalchen/weather-panel" target="_blank"
-                                    class="button-51">Source Code</a>
+                                    class="button-51" aria-label="Source Code">Source Code</a>
                               </div>
                             </div>
                           </div>
                     </div>
                     <div class="col-md-12 col-sm-12 col-lg-6 mt-4">
                         <div class="card-1">
-                            <img src="./assets/blog.png" class="card__image">
+                            <img src="./assets/blog.png" class="card__image" alt="blog">
                             <div class="card__overlay">
                               <div class="overlay__text">
                                 <h3>Blog</h3>
                                 <p>Blog website that allow users to add, edit and delete posts.
                                     Using Node.js, Express, mongoDB, ejs, JavaScript, HTMl, Restfull API and semantic-ui.</p>
-                                    <a id="blog-link1" href="https://github.com/inbalchen/Blog" class="button-51">Visit Website</a>
+                                    <a id="blog-link1" href="https://github.com/inbalchen/Blog" class="button-51" aria-label="Visit Website">
+                                        Visit Website</a>
                                     <a id="blog-link2" href="https://github.com/inbalchen/Blog" target="_blank"
-                                        class="button-51">Source Code</a>
+                                        class="button-51" aria-label="Source Code">Source Code</a>
                               </div>
                             </div>
                           </div>
@@ -257,7 +258,7 @@
                 <div class="row">
                     <div class="col-md-12 col-sm-12 col-lg-6 mt-4">
                         <div class="card-1">
-                            <img src="./assets/youtube.png" class="card__image">
+                            <img src="./assets/youtube.png" class="card__image" alt="youtube app">
                             <div class="card__overlay">
                               <div class="overlay__text">
                                 <h3>YouTube App</h3>
@@ -265,25 +266,25 @@
                                     Using <a href="https://developers.google.com/youtube/v3/getting-started">YouTube Data
                                         API</a>, React and semantic-ui.</p>
                                     <a id="youtube-link1" target="_blank" href="https://youtube-app-ic.netlify.app/"
-                                        class="button-51">Visit Website</a>
+                                        class="button-51" aria-label="Visit Website">Visit Website</a>
                                     <a id="youtube-link2" href="https://github.com/inbalchen/YoutubeApp" target="_blank"
-                                        class="button-51">Source Code</a>
+                                        class="button-51" aria-label="Source Code">Source Code</a>
                               </div>
                             </div>
                           </div>
                     </div>
                     <div class="col-md-12 col-sm-12 col-lg-6 mt-4">
                         <div class="card-1">
-                            <img src="./assets/movie.png" class="card__image">
+                            <img src="./assets/movie.png" class="card__image" alt="movie search api">
                             <div class="card__overlay">
                               <div class="overlay__text">
                                 <h3>Movie Search</h3>
                                 <p>allow users to search favorite movies. Using <a href="http://www.omdbapi.com/">OMDB
                                     API</a>, Node.js, Express and ejs.</p>
                                 <a id="movie-link1" target="_blank" href="http://moviesearch-env.eba-hgautuzv.us-east-1.elasticbeanstalk.com/"
-                                    class="button-51">Visit Website</a>
+                                    class="button-51" aria-label="Visit Website">Visit Website</a>
                                 <a id="movie-link2" href="https://github.com/inbalchen/MoviesAPIsearch" target="_blank"
-                                    class="button-51">Source Code</a>
+                                    class="button-51" aria-label="Source Code">Source Code</a>
                               </div>
                             </div>
                           </div>
@@ -292,30 +293,30 @@
                 <div class="row">
                     <div class="col-md-12 col-sm-12 col-lg-6 mt-4">
                         <div class="card-1">
-                            <img src="./assets/survey-app.png" class="card__image">
+                            <img src="./assets/survey-app.png" class="card__image" alt="survey app">
                             <div class="card__overlay">
                               <div class="overlay__text">
                                 <h3>Survey App</h3>
                                 <p>A simple survey application with json-server, React, React Router and Material-ui.</p>
                                 <a id="survey-link1" target="_blank" href="https://github.com/inbalchen/survey-app"
-                                    class="button-51">Visit Website</a>
+                                    class="button-51" aria-label="Visit Website">Visit Website</a>
                                 <a id="survey-link2" href="https://github.com/inbalchen/survey-app" target="_blank"
-                                    class="button-51">Source Code</a>
+                                    class="button-51" aria-label="Source Code">Source Code</a>
                               </div>
                             </div>
                           </div>
                     </div>
                     <div class="col-md-12 col-sm-12 col-lg-6 mt-4">
                         <div class="card-1">
-                            <img src="./assets/drop-down.png" class="card__image">
+                            <img src="./assets/drop-down.png" class="card__image" alt="react dropdown component npm">
                             <div class="card__overlay">
                               <div class="overlay__text">
                                 <h3>React Dropdown Component</h3>
                                 <p>Public react dropdown component library. Published on NPM</p>
                                 <a id="dropdown-link1" target="_blank" href="https://www.npmjs.com/package/dropdown-react-component"
-                                    class="button-51">Visit Website</a>
+                                    class="button-51" aria-label="Visit Website">Visit Website</a>
                                 <a id="dropdown-link2" href="https://github.com/inbalchen/dropdown-react-component" target="_blank"
-                                    class="button-51">Source Code</a>
+                                    class="button-51" aria-label="Source Code">Source Code</a>
                               </div>
                             </div>
                           </div>
@@ -370,17 +371,17 @@
         <div class="container">
             <div class="row mt-2">
                 <div class="col">
-                    <a href="https://www.linkedin.com/in/inbal-chen-318244135/" target="_blank">
+                    <a href="https://www.linkedin.com/in/inbal-chen-318244135/" target="_blank" aria-label="Linkedin">
                         <i class="fa fa-linkedin-square" aria-hidden="true"></i>
                     </a>
-                    <a href="https://github.com/inbalchen" target="_blank">
+                    <a href="https://github.com/inbalchen" target="_blank" aria-label="Github">
                         <i class="fab fa-github-square"></i> 
                     </a>
                     <a href="mailto:inbalchenz@gmail.com">
-                        <i class="fa fa-envelope-square" aria-hidden="true"></i>
+                        <i class="fa fa-envelope-square" aria-hidden="true" aria-label="Contact"></i>
                     </a>
                     <a href="https://wa.me/9720544715198">
-                        <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                        <i class="fa fa-whatsapp" aria-hidden="true" aria-label="Whatsapp"></i>
                     </a>
                 </div>
             </div>
@@ -395,9 +396,6 @@
     <script>
         AOS.init();
     </script>
-
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
-        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="./js/scrollTo.js"></script>
     <script src="./js/contact.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
