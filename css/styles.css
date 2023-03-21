@@ -51,9 +51,9 @@
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
-  background: url(../assets/bg.png), url(../assets/blob.svg);
+  background: url(../assets/bg.png), url(../assets/blob.png);
   background-repeat: no-repeat;
-  background-position: center, -161px -172px;
+  background-position: center, -185px -250px;
   background-size: cover;
   background-blend-mode: overlay;
   background-attachment: fixed, scroll;
@@ -207,7 +207,7 @@ strong {
 }
 
 .ex__sec li::before {
-  content: url(../assets/blob.svg);
+  content: url(../assets/blob.png);
   position: absolute;
   left: 0px;
   top: 3px;
