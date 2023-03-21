@@ -51,7 +51,7 @@
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
-  background: url(../assets/bg.jpeg), url(../assets/blob.svg);
+  background: url(../assets/bg.png), url(../assets/blob.svg);
   background-repeat: no-repeat, no-repeat;
   background-position: center, -161px -172px;
   background-size: cover, cover;
