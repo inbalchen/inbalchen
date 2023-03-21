@@ -385,7 +385,7 @@ input:focus, textarea:focus {
 /* PATTERN */
 
 .pattern-1 {
-  background: linear-gradient(25deg, #ffffff 40%, transparent 41%, transparent 59%, #ffffff 60%) ,linear-gradient(90deg, transparent 45%, var(--secondary-color) 45%, var(--secondary-color) 55%, transparent 55%, transparent 20%, var(--secondary-color) 20%, var(--secondary-color) 30%,transparent 82%);
+  background: linear-gradient(25deg, #ffffff 41%, transparent 40%, transparent 60%, #ffffff 60%) ,linear-gradient(90deg, transparent 45%, var(--secondary-color) 45%, var(--secondary-color) 55%, transparent 55%, transparent 20%, var(--secondary-color) 20%, var(--secondary-color) 30%,transparent 55%);
   background-size: 4em 4em;
   opacity: 0.45;
   height: 185px;
@@ -397,7 +397,6 @@ input:focus, textarea:focus {
   transform: rotate(45deg);
   transition: transform 0.6s;
   transform-style: preserve-3d;
-  /* animation: rotating 10s forwards infinite; */
 }
 
 .pattern-2 {
@@ -498,6 +497,10 @@ input:focus, textarea:focus {
 
 .shadow-html {
   filter: drop-shadow(0 0 5px var(--primary-color));
+  -webkit-filter: drop-shadow(0 0 5px var(--primary-color));
+  -moz-filter:  drop-shadow(0 0 5px var(--primary-color));
+  -ms-filter:  drop-shadow(0 0 5px var(--primary-color));
+  -o-filter: drop-shadow(0 0 5px var(--primary-color));
 }
 
 .circle-html {
