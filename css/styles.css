@@ -325,6 +325,12 @@ footer i {
 
 .navbar-light .navbar-nav .nav-link {
   color: var(--base-color) !important;
+  transition: 700ms ease;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  font-variation-settings: "wght" 582; 
+  letter-spacing: 0.6px;
 }
 
 .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
@@ -568,6 +574,12 @@ header h1 {
   letter-spacing: -2px;
   line-height: 0.85;
   color: var(--base-color);
+  transition: 700ms ease;
+}
+
+header h1:hover {
+  font-variation-settings: "wght" 582; 
+  letter-spacing: 0px;
 }
   
 .heading__outer {
@@ -595,6 +607,9 @@ header h1 {
 @media screen and (max-width: 600px) {
   .social {
     display: none;
+  }
+  header h1 {
+    font-size: 50px;
   }
 }
 
