@@ -64,13 +64,6 @@
   transition: all 0.2s;
 }
 
-.intro__container .intro__container-left-pane h1 {
-  font-size: var(--fs-l);
-  color: var(--base-color);
-  margin: 0;
-  font-family: Assistant-Bold;
-}
-
 /* SOCIAL */
 
 .social {
@@ -567,12 +560,24 @@ input:focus, textarea:focus {
   z-index: -1;
 }
 
+header h1 {
+  text-transform: uppercase;
+  font-size: 90px;
+  font-style: italic;
+  font-weight: 900;
+  letter-spacing: -2px;
+  line-height: 0.85;
+  color: var(--base-color);
+}
+  
+.heading__outer {
+  display: block;
+}
 
-
-@media (max-width: 768px) {
-  .intro__container {
-    text-align: center;
-  }
+.heading__inner {
+  display: inline-block;
+  position: relative;
+  font-family: Assistant-Bold;
 }
 
 @supports (-webkit-overflow-scrolling: touch) {
