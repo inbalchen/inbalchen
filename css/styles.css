@@ -64,6 +64,10 @@
   transition: all 0.2s;
 }
 
+.intro__container > div {
+  padding: 0 20px;
+}
+
 /* SOCIAL */
 
 .social {
@@ -392,7 +396,7 @@ input:focus, textarea:focus {
 .pattern-1 {
   background: linear-gradient(25deg, #ffffff 41%, transparent 40%, transparent 60%, #ffffff 60%) ,linear-gradient(90deg, transparent 45%, var(--secondary-color) 45%, var(--secondary-color) 55%, transparent 55%, transparent 20%, var(--secondary-color) 20%, var(--secondary-color) 30%,transparent 55%);
   background-size: 4em 4em;
-  opacity: 0.45;
+  opacity: 0.3;
   height: 185px;
   width: 185px;
   position: absolute;
@@ -407,7 +411,7 @@ input:focus, textarea:focus {
 .pattern-2 {
   background: radial-gradient(circle at 25% 25%,transparent 14%,var(--primary-color) 15%, var(--primary-color) 20%, transparent 21%, transparent 100%), radial-gradient(circle at 75% 75%, transparent 11%, var(--primary-color) 12%, var(--primary-color) 17%, transparent 18%);
   background-size: 2em 2em;
-  opacity: 0.25;
+  opacity: 0.1;
   width: 112px;
   height: 112px;
   position: absolute;
@@ -608,13 +612,31 @@ header h1:hover {
   .social {
     display: none;
   }
+}
+
+@media screen and (max-width: 768px) {
+  .intro__container {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 500px) {
   header h1 {
-    font-size: 50px;
+    font-size: 55px;
+  }
+  .intro__container {
+    height: 75vh;
   }
 }
 
 @media screen and (max-width: 470px) {
-  .button-51 {
-    font-size: 0.6rem;
+  .card__overlay .button-51 {
+    padding: 8px 6px 8px;
+  }
+  .overlay__text h3 {
+    font-size: 1.15rem;
+  }
+  .overlay__text p {
+    font-size: 1rem;
   }
 }
