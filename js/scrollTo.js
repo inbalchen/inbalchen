@@ -8,7 +8,6 @@ window.addEventListener('scroll', function(){
     const sectionHeight = section.clientHeight;
     if(pageYOffset >= (sectionTop - sectionHeight / 2)){
       currentSection = section.getAttribute('id'); 
-      
     }
   })
 
